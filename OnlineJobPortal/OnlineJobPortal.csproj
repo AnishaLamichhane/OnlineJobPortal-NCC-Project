@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\vendor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\js\vendor\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="Views\JobList\" />
+    <Folder Include="Views\JobDetails\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\About\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="Views\Auth\" />
+    <None Remove="Views\JobList\" />
+    <None Remove="Views\JobDetails\" />
+  </ItemGroup>
+</Project>
